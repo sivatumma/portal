@@ -1,0 +1,15 @@
+enyo.depends(
+    // external libraries
+    "leaflet",
+    "moment.js",
+    "underscore-min.js",
+    "jquery",
+    "menuPane",
+    "FileInputDecorator.js",
+    "fontAwesome",
+<<<<<<< HEAD
+    "highcharts"
+=======
+    "ciscoFonts"
+>>>>>>> release
+);

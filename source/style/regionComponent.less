@@ -1,0 +1,135 @@
+/*Sytles for region component view*/
+// ------------------------------
+// regionComponent.css
+
+@import "globalVariables.less";
+
+.regionFilterTableItem {
+	margin-top:10px;
+	width:97%;
+}
+.regionFilterTableItemHeader {
+	margin-top:10px;
+	width:97%;
+}
+.labelColor {
+	color:silver;
+}
+.selectedLabel {
+	float:right; 	
+}
+.regionPopup {
+	min-width:@widthHundPercent; 
+	min-height:600px;
+}
+.regionFilterPopup {
+	min-height:400px;
+    width:@widthHundPercent;
+    min-width:350px;
+}
+.regionFilterTopbar {
+    font-family: calibri;
+    font-size: 90%;
+    display: inline;
+    width: 140px;
+    padding: 4px;
+    margin-right: 5px;
+    background: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.regionFilterTopbar .rightContent{ float:right;}
+.regionFilterTopbar .onlyDisplayLabel{color:black;}
+.regionFilterTopbar a {
+    color: red;
+    text-decoration: none;
+    outline: none;
+}
+.regionFilterTopbar .regionFilterRadioButton {
+    display: inline;
+    padding: 2px 12px;
+    margin: 0;
+    outline: 0;
+    color: red;
+    border-radius: 2px;
+    background: none;
+    // cursor: hand;
+    cursor: pointer;
+}
+.regionFilterTopbar .span {
+    display: inline;
+    margin-right: 10px;
+    color:#000;
+}
+.regionFilterTopbar img {
+    font-family: inherit;
+    font-size: 110%;
+    vertical-align: top;
+}
+.regionFilterTopbar input {
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #d4d4d4;
+}
+.regionFilterTopbar input[type=button] {
+    background: red;
+    width: 45%;
+    color: white;
+    border-radius: 3px;
+}
+.regionFilterTopbar button {
+    padding: 4px;
+    margin-right: 5px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.regionFilterRadioButton {
+    font-size: 90%;
+    display: inline;
+}
+.regionFilterTopbar .regionFilterRadioGroup {
+    display: inline;
+    padding:0px;
+    // float:right;
+}
+// .rightAlign{float:right;}
+.regionFilterTopbar .regionFilterButtonGroup{ display:inline; }
+.regionFilterTopbar .regionFilterButtonGroup img {
+	height:30px; 
+	width:30px; 
+	display:inline;
+    border:none;
+}
+.filterLabel {
+	display:inline; 
+	margin-left:6px; 
+	margin-top:10px;
+    color:black;
+}
+.locationMarker{height:30px; width:30px; display:inline;}
+.contentArea {
+    min-height: 250px !important;
+}
+.regionFilterPolicies {
+	padding:20px; 
+	overflow:auto;
+}
+.regionFilterTempCancelBtn {
+	background: gray; 
+	padding:1px 20px;
+	color:white;
+	border:0px solid red;
+	margin-right:4px;
+	border-radius:4px;
+}
+.regionFilterTempDoneBtn {
+	background: red;
+	padding:1px 20px; 
+	color:white;
+	border:0px solid red;
+	border-radius:4px;
+}

@@ -1,0 +1,276 @@
+/*Sytles for layers Component view*/
+
+// ------------------------------
+// layersComponent.css
+.layersComponent {
+    // margin: 10px;
+    // margin-top: 5px;
+    // border-radius: 6px;
+}
+.layersComponentMenu {
+    width: 85%;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+.layersComponent .fa-pencil {
+    margin-left: 10px;
+}
+.addNewLayerButton {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: 1px solid #d4d4d4 !important;
+    text-align: left;
+    display: inline;
+    padding: 10px 18px;
+    box-shadow: none !important;
+    letter-spacing: 0.5px;
+    border-radius: 6px;
+}
+.addNewLayerButtonInactive {
+    width: 100%;
+    background: #fff !important;
+    color: #000;
+    border: 1px solid #d4d4d4 !important;
+    text-align: left;
+    display: inline;
+    border-radius: 5px;
+    padding: 9px 18px;
+}
+.addNewLayerContent {
+    line-height: 150%;
+    font-size: 80%;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    width: 99%;
+}
+.favoriteButton {
+    background-color: #D1D2D3;
+    margin-top: 15px !important;
+    font-size: 12px;
+    border-radius: 4px;
+    height: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+.layerComponent {
+    background: #FFF;
+    margin-top: 5px;
+    line-height: 35px;
+    border-radius: 3px;
+}
+.layerComponentEyeImage {
+    margin-left: 5px;
+    padding-top: 5px;
+}
+.layerName {
+    margin-left: 5px;
+    // font-size: 14px;
+    font-size: 90%;
+}
+.layerComponentCloseImage {
+    float: right;
+    padding-top: 10px;
+    margin-right: 5px;
+}
+.layersPopupRow1 {
+    display: inline-block;
+}
+.regionFilterRadioGroup {
+    display: inline;
+    width: 140px;
+    padding-left: 60px;
+}
+// .regionFilterRadioButton {
+//  font-size: 90%; 
+//  display: inline;
+//  // display: inline;
+//     padding: 2px 12px;
+//     margin: 0;
+//     outline: 0;
+//     color: red;
+//     border-radius: 2px;
+//     background: none;
+//     // cursor: hand;
+//     cursor: pointer;
+// }
+.layerSelectionInfo {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.checkBoxcontainer {
+    height: 300px;
+    border-bottom: 1 px sloid #000;
+}
+.cancelButton, .doneButton {
+    padding: 6px 43px;
+    color: white;
+    border-radius: 3px;
+    font-size: 100%;
+}
+.onyx-contextual-popup.left.high::after{border-right:10px solid #fff !important;}
+.selectLayersTitle {
+    padding: 0px 0px 10px 0px;
+    font-size: 85%;
+}
+.cancelButton {
+    background: #E6E7E8;
+    border: 0px solid #E6E7E8;
+    margin-right: 4px;
+    color: #000;
+}
+.doneButton {
+    border: 0px;
+}
+.layersPopupRow4DoneBtn {
+    background: red;
+    padding: 1px 20px;
+    color: white;
+    border: 0px solid red;
+    border-radius: 4px;
+}
+.layersSelectionComponent {
+    display: block;
+    width: 100%;
+    padding-left: 35px;
+    line-height: 29px;
+    text-transform: capitalize;
+}
+.layersSeleCompCheckboxCont {
+    padding-left: 20px;
+    paading-top: 10px;
+}
+// .regionFilterRadioButton.active {
+//     display: inline;
+//     color: white;
+//     border: none;
+//     background: red;
+//     border-top: 1px solid red;
+//     box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.2);
+// }
+.centerAlign {
+    text-align: center
+}
+.eyeOutline {
+    margin-left: 5px;
+    // padding-top: 5px;
+}
+/*.childCheckboxContainer {
+    padding-left: 20px;
+    paading-top: 10px;
+}*/
+
+.addLayersPopup {
+    background-color: #FFF;
+    color: #000;
+    padding: 0px 3px;
+    border-radius:0px !important;
+}
+.addLayersPopup .enyo-touch-scroller {
+    max-height: none !important;
+}
+.addLayersPopup .onyx-contextual-popup-scroller {
+    padding: 1px 10px;
+}
+.top-border {
+    border: 1px solid #E6E7E8;
+    margin-top: 10px;
+}
+.layersCount, .layersContainer {
+    margin: 10px 8px;
+}
+.layersCountBrackets {
+    font-size: 65%;
+}
+.layerSelectionCheckbox {
+    background: url("../../assets/layerCheckbox.png") no-repeat;
+    height: 22px;
+    padding-bottom: 9px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid silver;
+    font-size: 90%;
+    background-position: 0px 5px !important;
+}
+.lightOpContainer + #floatingLayer .layerSelectionCheckbox {
+    background: url("../../assets/checkbox_light_operator.png") no-repeat;
+}
+.cityOpContainer + #floatingLayer .layerSelectionCheckbox {
+    background: url("../../assets/checkbox_city_operator.png") no-repeat;
+}
+.businessOpContainer + #floatingLayer .layerSelectionCheckbox {
+    background: url("../../assets/checkbox_business.png") no-repeat;
+}
+.cityoffContainer + #floatingLayer .layerSelectionCheckbox {
+    background: url("../../assets/checkbox_city_official.png") no-repeat;
+}
+.tourOpContainer + #floatingLayer .layerSelectionCheckbox {
+    background: url("../../assets/checkbox_city_official.png") no-repeat;
+}
+.layerSelectionCheckbox.onyx-checkbox[checked] {
+    background-position: 0px -36px !important;
+}
+.addLayersPopup .onyx-contextual-popup-title {
+    display: none;
+}
+.popUpFooter {
+    margin-top: 5px;
+}
+.layersComponent .heading {
+    font-weight: bold;
+    font-size: 100%;
+    padding: 10px 20px;
+    background: #f4f4f4;
+    border-bottom: 1px solid #E6E7E8;
+    margin-bottom: 15px;
+}
+.layersComponent .leftmargin {
+    margin-left: 10px;
+}
+.layersComponent .fa-pencil {
+    display: inline-block;
+    padding: 0px;
+    float: right;
+}
+.layersComponent .fa-pencil:hover {
+    background: orange;
+    padding: 2px;
+    display: inline-block;
+}
+.layersTitleBorder {
+    border-bottom: 1px solid silver;
+}
+// .whiteBG{background:white !important; border:1px solid #f4f4f4; color:black;}
+.inline {
+    display: inline;
+}
+.notificationBox {
+    background-color: #d4d4d4;
+    padding: 5px;
+    border-radius: 6px;
+    bottom: 0;
+    position: absolute;
+    width: 95%;
+    margin: 10px auto;
+}
+.notificationType {
+    display: inline-block;
+    color: red;
+    border: none;
+    margin: 10px 0px;
+    text-align: left;
+    font-size: 20px;
+}
+.notificationDescription {
+    margin: 5px;
+    text-align: left;
+}
+.fa-exclamation-circle {
+    color: red;
+    font-size: 30px;
+    margin-right: 15px;
+}
+// .exclamation{background-image:url('../../assets/alert_symbol.png');}
+.notificationBox button {
+    color: white;
+    background: red;
+}

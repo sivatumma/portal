@@ -1,0 +1,489 @@
+/*
++    App-specific LESS/CSS would go here, but to make your
++    application easier to maintain, you should try to
++    minimize the use of custom CSS.
++*/
+
+@import "globalVariables.less";
+// .main-view {} 
+.mapview .map-area .map {
+    height: @heightHundPercent;
+    margin: 10px auto;
+    border: 3px solid #DDD;
+    width: @widthHundPercent;
+    border: 3px solid #DDD;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+::selection {
+    color: #000 !important;
+    background: #c6daff !important;
+}
+::-moz-selection {
+    color: #000 !important;
+    background: #c6daff !important;
+}
+/****/
+
+.login {
+    margin: 10% auto;
+    padding: 10px 3px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 2px 1px 10px;
+    width: 220px;
+    height: 220px;
+}
+.signupPopup {
+    border: 1px solid silver;
+    width: 340px;
+    height: 300px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px;
+    background: #f4f4f4;
+    top: 10px;
+}
+.signupform {
+    padding: 10px;
+}
+.floatright {
+    float: right;
+    width: 400px;
+    display: block;
+}
+.regionFilterButton {
+    padding: 4px;
+    margin-right: 5px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.loginbutton {
+    padding: 4px;
+    margin-bottom: 10px;
+    background: red;
+    width: 75%;
+    color: white;
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+}
+.RegionFilterTopbar a {
+    color: red;
+    text-decoration: none;
+    outline: none;
+}
+.regionFilterRadioButton {
+    display: inline;
+    padding: 2px 12px;
+    margin: 0;
+    outline: 0;
+    color: red;
+    border-radius: 2px;
+    background: none;
+    // cursor: hand;
+    cursor: pointer;
+}
+.regionFilterRadioButton:first-child, .regionFilterTopbar .regionFilterRadioButton:first-child {
+    display: inline;
+    border-radius: 2px 0 0 2px;
+}
+.regionFilterRadioButton:last-child, .regionFilterTopbar .regionFilterRadioButton:last-child {
+    display: inline;
+    border-radius: 0px 2px 2px 0px;
+}
+.regionFilterRadioButton.active, .regionFilterTopbar .regionFilterRadioButton.active {
+    display: inline;
+    color: white;
+    border: none;
+    background: red;
+    border-top: 1px solid red;
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.regionPopupContainer .onyx-contextual-popup-title {
+    // letter-spacing: 0.5px;
+    margin-top: 15px;
+    padding: 8px 15px 0px 15px;
+    font-weight: normal;
+    width: 94%;
+}
+.regionPopupContainer .enyo-touch-scroller {
+    max-height: 300px !important;
+}
+.regionPopupContainer .onyx-contextual-popup-scroller {
+    padding: 10px 15px;
+}
+.regionPopupContainer {
+    background-color: #FFF;
+    color: #000;
+}
+.regionFilterButton {
+    padding: 4px;
+    margin-right: 5px;
+    background: red;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.regionFilterRadioGroup {
+    display: inline;
+    width: 140px;
+}
+/*.regionPopupContainer .enyo-touch-scroller {
+    max-height: 660px !important;
+    height: 400px;
+}
+.regionPopupContainer {
+    background-color: #FFF;
+    color: #000;
+    height: 500px;
+}*/
+
+.searchbox {
+    width: @widthHundPercent;
+    margin-top: 20px;
+    padding: 5px;
+    padding-left: 33px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    background-image: url('../../assets/search1.png');
+    background-repeat: no-repeat;
+    outline: none;
+}
+//Login CSS
+.login {
+    margin: 10% auto;
+    padding: 20px 8px 10px 8px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 2px 4px 5px;
+    width: 230px !important;
+    height: 250px !important;
+}
+.span {
+    display: inline;
+    margin-right: 10px;
+}
+.loginbutton {
+    padding: 4px;
+    margin-bottom: 10px;
+    background: red;
+    width: 70%;
+    color: white;
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+}
+.anchor {
+    color: red;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.createPolicyPopup, .createOfferPopup {
+    background-color: #FFF;
+    color: #000;
+    padding: 0px 5px;
+}
+.createPolicyPopup .enyo-touch-scroller input {
+    color: silver;
+}
+.createPolicyPopup .enyo-touch-scroller, .createOfferPopup .enyo-touch-scroller {
+    max-height: 500px !important;
+}
+.createPolicyPopup .onyx-contextual-popup-scroller, .createOfferPopup .onyx-contextual-popup-scroller {
+    padding: 10px 10px 0px 10px;
+    max-height: 500px !important;
+    width: 340px;
+}
+.createOfferPopup .onyx-contextual-popup-scroller {
+    width: 360px;
+}
+.createOfferPopup label, .createOfferPopup select, .createOfferPopup .dateComponentOffer, .createOfferPopup input[type="file"] {
+    border-color: #d4d4d4;
+    height: 35px !important;
+    border-radius: 3px;
+}
+.markerIcon {
+    background-color: #ff1f45;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 30px;
+    width: 30px;
+    text-align: center;
+    height: 300px;
+}
+.defaultMarker {
+    height: 35px !important;
+    width: 35px !important;
+}
+.selectedMarker > img {
+    border: 5px solid #FDFF04 !important;
+    border-radius: 50px;
+    // font-size:100px;
+    // display:block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+.selectedMarker > svg {
+    border: 5px solid #FDFF04 !important;
+    border-radius: 50px;
+    // font-size:100px;
+    // display:block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+.policyExistingOnThisLight > img {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    display: block;
+    height: 35px !important;
+    width: 35px !important;
+    text-align: center;
+    position: absolute;
+}
+.policyExistingOnThisLight > svg {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    display: block;
+    height: 35px !important;
+    width: 35px !important;
+    text-align: center;
+    position: absolute;
+}
+/*.leaflet-marker-icon .policyExistingOnThisLight .leaflet-zoom-animated .leaflet-clickable img {
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    display: block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    position: absolute;
+}*/
+
+.switchedOn {
+    border: 3px solid #00ff78;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+}
+.switchedOff {
+    border: 0px solid #00ff78;
+}
+/*Classes added after clean up*/
+
+.createPolicyHeader {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.leftDefaultPaddding {
+    padding-left: 5px;
+}
+.policyRuleSelection {
+    width: 98%;
+}
+.dateTimeInfo {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.actionsSection {
+    text-align: center;
+    padding-top: 10px;
+}
+.dateInput, .timeInput {
+    border: 1px solid #E6E7E8;
+    border-radius: 3px;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.createOfferView .dateInput {
+    width:99%;
+    padding: 9px 0px;
+    text-align: left;
+    text-indent: 6px;
+}
+.sliderContainer {
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+.intensitySlider {
+    width: 70%;
+    height: 22px !important;
+    border-radius: 12px;
+    background: -webkit-linear-gradient(left, #000, #fff);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(right, #000, #fff);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(right, #000, #fff);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(to right, #000, #fff);
+    /* Standard syntax */
+    
+    margin-left: 0px;
+}
+.intensitySlider .onyx-slider-knob {
+    margin: -29px -20px;
+}
+.intensitySlider .onyx-progress-bar-bar {
+    border-radius: 12px;
+    visibility: hidden;
+}
+.intensityToggle {
+    border-radius: 15px;
+    height: 23px!important;
+    border-radius: 15px;
+    width: 68px;
+    line-height: 25px;
+    background: none;
+    background-color: #55D769;
+    font-size: 80%;
+    margin-left: 15px;
+}
+.intensitylevel {
+    margin-left: -16px;
+    vertical-align: middle;
+    font-size: 80%;
+}
+.intensityToggle .onyx-toggle-button-knob {
+    border-radius: 15px;
+    height: 22px;
+    width: 22px;
+}
+.createPolicyPopup .onyx-contextual-popup-title {
+    padding: 0px;
+}
+.rightAlign {
+    float: right;
+}
+// global classes
+.fontSize80 {
+    font-size: @fontSize80;
+}
+.verticalAlign {
+    vertical-align: middle;
+}
+.onyx-contextual-popup.vertical.below.right::after {
+    border-bottom: 10px solid #fff;
+}
+// styles based on roles
+.lightOpContainer .activeToolbarNavButton, .lightOpContainer .lsButtonActive, .lightOpContainer .nsButtonActive, .lightOpContainer .rsButtonActive, .lightOpContainer .tsButtonActive, .lightOpContainer .createPolicyButton, .lightOpContainer + #floatingLayer .doneButton {
+    background: @lightOperator !important;
+    color: @white;
+}
+.businessOpContainer .activeToolbarNavButton, .businessOpContainer .lsButtonActive, .businessOpContainer .nsButtonActive, .businessOpContainer .rsButtonActive, .businessOpContainer .tsButtonActive, .businessOpContainer .createOfferButton, .businessOpContainer + #floatingLayer .doneButton {
+    background: @businessOperator !important;
+    color: @white;
+}
+.cityOpContainer .activeToolbarNavButton, .cityOpContainer .lsButtonActive, .cityOpContainer .nsButtonActive, .cityOpContainer .rsButtonActive, .cityOpContainer .tsButtonActive, .cityOpContainer + #floatingLayer .doneButton {
+    background: @cityOperator !important;
+    color: @white;
+}
+.tourOpContainer .activeToolbarNavButton, .tourOpContainer .lsButtonActive, .tourOpContainer .nsButtonActive, .tourOpContainer .rsButtonActive, .tourOpContainer .tsButtonActive, .tourOpContainer + #floatingLayer .doneButton {
+    background: @tourOperator !important;
+    color: @white;
+}
+.cityoffContainer .activeToolbarNavButton, .cityoffContainer .lsButtonActive, .cityoffContainer .nsButtonActive, .cityoffContainer .rsButtonActive, .cityoffContainer .tsButtonActive, .cityoffContainer + #floatingLayer .doneButton {
+    background: @citytOfficial !important;
+    color: @white;
+}
+.lightOpContainer .toolbarContainer {
+    border-bottom: 5px solid@lightOperator;
+    .userNameText, .fa-angle-down {
+        color: @lightOperator;
+    }
+}
+.lightOpContainer .logoutIcon {
+    background: @lightOperator;
+    width: 30px;
+    height: 30px;
+}
+.businessOpContainer .toolbarContainer {
+    border-bottom: 5px solid@businessOperator;
+    .userNameText, .fa-angle-down {
+        color: @businessOperator;
+    }
+}
+.cityOpContainer .toolbarContainer {
+    border-bottom: 5px solid@cityOperator;
+    .userNameText, .fa-angle-down {
+        color: @cityOperator;
+    }
+}
+.tourOpContainer .toolbarContainer {
+    border-bottom: 5px solid@tourOperator;
+    .userNameText, .fa-angle-down {
+        color: @tourOperator;
+    }
+}
+.cityoffContainer .toolbarContainer {
+    border-bottom: 5px solid@citytOfficial;
+    .userNameText, .fa-angle-down {
+        color: @citytOfficial;
+    }
+}
+div.leaflet-marker-icon.selectedMarker.leaflet-zoom-animated.leaflet-clickable {
+    border: 0px;
+}
+div.leaflet-marker-icon.selectedMarker.leaflet-zoom-animated.leaflet-clickable img {
+    display: block;
+    border: 5px solid yellow;
+    border-radius: 50px;
+    position: absolute;
+}
+.searchNeighbourCls {
+    background-image: url(../../assets/search1.png);
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    border-radius: 5px;
+    background-position: -2% -2px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+.searchNeighbourCls::-webkit-input-placeholder {
+    color: #000;
+}
+.searchNeighbourCls:-moz-placeholder {
+    /* FF 4-18 */
+    
+    color: #000;
+}
+.searchNeighbourCls::-moz-placeholder {
+    /* FF 19+ */
+    
+    color: #000;
+}
+.searchNeighbourCls:-ms-input-placeholder {
+    /* IE 10+ */
+    
+    color: #000;
+}
+/*div.leaflet-marker-icon.selectedMarker.leaflet-zoom-animated.leaflet-clickable {
+    border: 0px;
+}
+div.leaflet-marker-icon.selectedMarker.leaflet-zoom-animated.leaflet-clickable img {
+    display: block;
+    border: 5px solid yellow;
+    border-radius: 50px;
+    position: absolute;
+}*/

@@ -1,0 +1,16 @@
+enyo.depends(
+    "createNotification.js",
+    "views.js",
+    "toolbar.js",
+    "homeView.js",
+    "loginView.js",
+    "manageView.js",
+    "reportsView.js",
+    "layersComponent.js",
+    "mapFilterComponent.js",
+    "LeafletMap.js",
+    "createPolicy.js",
+    "createOffer.js",
+    "datetimeComponents.js",
+    "svgImages.js"
+);

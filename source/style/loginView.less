@@ -1,0 +1,98 @@
+/* Sytles for login view */
+// ------------------------------
+// loginView.css
+
+@import "globalVariables.less";
+.loginView {
+}
+.loginView * {
+    font-family: "ciscosansttregular";
+}
+.loginView .login {
+    margin: 0% auto;
+    padding: 20px 3px;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 0px 3px 3px #d4d4d4;
+    width: 300px !important;
+    height: 400px !important;
+}
+.loginView .loginHeadingLabel {
+    font-size: @fontSize100;
+    color: #827e7e;
+    font-weight: 100;
+}
+.loginView .login .logo {
+    margin: 0px auto 5px auto;
+    font-size: @fontSize150;
+    border: none;
+    border: 0px;
+    color: #ccc5c5;
+    line-height: 150%;
+    font-weight: 100;
+}
+.loginView .loginViewAlertMsg {
+    display: none;
+    font-size: 80%;
+    color: red;
+    margin-bottom: 10px;
+    width: 95%;
+    text-align: center;
+}
+.loginView .alertMessage {
+    display: none;
+    font-size: 80%;
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.loginview_input_text {
+    font-size: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 100%;
+    border-radius: 6px;
+    border: 2px solid #d4d4d4;
+    // background: #ed2525;
+    width: 80%;
+}
+.loginview_input_button {
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #0096d6;
+    width: 88%;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #0096d6;
+    cursor: pointer;
+    //cursor: hand;
+    // display: block;
+    margin: 0px auto;
+    font-size: 100%;
+}
+.loginView .branding {
+    text-align: center;
+    margin: 10px auto;
+    display: block;
+    padding: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+    font-size: 100%;
+}
+.loginview_input_button:hover {
+    background-color: #24A4DD;
+}
+.loginView .branding .heading, .loginView .branding .subHeading {
+    font-family: "ciscosansttregular";
+    font-size: 90%;
+    margin: 0px;
+    color: @ciscoColor;
+    text-align: center;
+}
+.loginView .branding .subHeading {
+    font-size: 70%;
+    line-height: 80%;
+    margin-bottom: 30px;
+}
